@@ -1,10 +1,59 @@
-<html>
-    <head>
-        <title>
-            led!    
-        </title>
-        <iframe width="725" height="453" src="https://www.tinkercad.com/embed/0U87rKmA1m6?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-    </head>
-    <body>
-    </body>
-</html>
+<script>
+        void setup(){
+            pinMode(7,OUTPUT);
+            pinMode(4,OUTPUT);
+            pinMode(6,OUTPUT);
+            pinMode(5,OUTPUT);
+            pinMode(7,OUTPUT);
+            pinMode(3,OUTPUT);
+            pinMode(2,OUTPUT);
+            
+            Serial.begin(9600);
+        }
+        
+        void loop(){
+            digitalWrite(7,HIGH);
+                led2();
+                delay(3500);
+            digitalWrite(7,LOW);
+            //delay(3500);
+            digitalWrite(4,HIGH);
+                delay(3500);
+            digitalWrite(4,LOW);
+            //delay(3500);
+            digitalWrite(2,HIGH);
+                delay(1500);
+            digitalWrite(2,LOW);
+            //delay(3500);
+            /*
+                digitalWrite(6,HIGH);
+                delay(3500);
+            digitalWrite(6,LOW);
+            //delay(3500);
+            digitalWrite(3,HIGH);
+                delay(3500);
+            digitalWrite(3,LOW);
+            //delay(3500);
+            digitalWrite(5,HIGH);
+                delay(1500);
+            digitalWrite(5,LOW);
+            */
+                
+        
+        }
+        
+        void led2(){
+            digitalWrite(3,HIGH);
+                delay(3500);
+            digitalWrite(3,LOW);
+            //delay(3500);
+            digitalWrite(5,HIGH);
+                delay(3500);
+            digitalWrite(5,LOW);
+            //delay(3500);
+            digitalWrite(6,HIGH);
+                delay(1500);
+            digitalWrite(6,LOW);
+            
+        }
+    </script>
